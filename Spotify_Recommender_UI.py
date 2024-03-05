@@ -26,14 +26,11 @@ spotify_df = pd.read_csv('spotify_data.csv')
 # Connect to Spotify
 
 # Victoria's Credentials
-# CLIENT_ID = '67e47942f4a542be8919e1de184a4691'
-# CLIENT_SECRET = 'c590e246187e4d6a85dc4f4e7c55e839'
-# REDIRECT_URI = 'https://localhost:8888/'
+# CLIENT_ID = ''
+# CLIENT_SECRET = ''
+# REDIRECT_URI = ''
 
-# Patrick's Credentials
-CLIENT_ID = '8c21c1b2e5b4441295523ed20d115be0'
-CLIENT_SECRET = '00559bad3cef428ea823b7c85f03313d'
-REDIRECT_URI = 'http://localhost:3000'
+
 
 # Initialize the Spotify client
 client_credentials_manager = SpotifyClientCredentials(client_id=CLIENT_ID, client_secret=CLIENT_SECRET)
@@ -44,8 +41,6 @@ st.sidebar.header('Username Playlists')
 st.sidebar.subheader('Username')
 username = st.sidebar.text_input("Enter your Spotify username:")
 button_clicked = st.sidebar.button("Get Playlists")
-# username = 'vpop4e58bzam0thumal44l53m'
-# username = 'victoriavillani4'
 
 # Sidebar Header
 st.sidebar.subheader('Playlists')
